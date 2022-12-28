@@ -75,7 +75,7 @@ while 1:  # user details
     else:
         break
 # Content to create PGP keys
-content = (make_passwd+' '+ 'sanskriti' +'PGP KEY'+ str(time) + 'Hello Abhishek')
+content = (make_passwd+' '+ ask_sign_email.split("@")[1].split(".")[0] +'PGP KEY'+ str(time) + ask_sign_name)
 store_data(pgp_key, content)
 # create PGP Pvt key
 Key = input('Enter location to store Key\n=>')
